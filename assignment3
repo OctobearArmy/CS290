@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Sharks</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Information about sharks">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-radius: 1em;
+            padding-top: 2px;
+            text-align: center;
+            background-color: white;
+        }
+        .list{
+            background-color: lightblue;
+            color: navy;
+            border: 2px solid black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: large;
+            font-style: oblique;
+            font-variant: normal;
+            font-weight: 900 bold;
+            text-align: left;
+            margin: 20px;
+            padding: 20px;
+        }
+        p{
+            text-size-adjust: auto;
+        }
+        p em{
+            text-decoration: underline;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap');
+        h1{
+            font:small-caps bold 200px/200px'Raleway', sans-serif;
+            margin:0;
+            text-align:center;
+        }
+        .ocean{
+            background: linear-gradient(27deg,#012741, #1d4267, #1978b8, #8ab0d7);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        img{
+            display:block;
+            margin: auto;
+            text-align: center;
+            height: inherit;
+        }
+        [class*="body"]{
+            background-color: beige;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50em
+        }
+        #h3{
+            text-align: center;
+        }
+        body p{
+            background-color: white;
+        }
+    </style>
+    <body class="body">
+        <h1><a id="top"></a></h1> <!--"top is part of a fragment identifier"-->
+        <h1 class="ocean">Sharks</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Similan_Dive_Center_-_great_whale_shark.jpg"
+        alt="A whale shark"width="700">
+        <p><strong>Sharks are one of a kind in more than one way!</strong> Although they are fish, many sharks give birth to 
+        live young. This separates them from other fish who lay eggs to reproduce. Some species of sharks 
+        have even more unique reproductive practices, such as sand tiger sharks having two wombs to ensure 
+        that two pups survive the pregnancy. Female sharks across the board are considered stronger and tougher 
+        than the males, partially because of how aggressive most sharks are when they breed. In order to survive, 
+        the female sharks must endure bites and other aggressive behavior from the males. But don’t worry! 
+        Most sharks take a long nap afterwards, upwards of 12 hours.</p>
+        <p><br>Sharks come in all shapes and sizes, and eat all sorts of food. Some sharks are huge and eat tiny food, 
+        like whale sharks and basking sharks. Despite being the largest sharks, they eat only small prey like krill. 
+        Other sharks like great whites prefer to eat bigger prey like seals or other smaller sharks and fish. 
+        Still other sharks like the tiger shark are not picky with what they eat, earning them the nickname of  
+        the trash can of the sea. They have even adapted to easily devour sea turtles despite their protective shell. 
+        Bull sharks are another well known hungry shark, they oftentimes will work their way upstream into the freshwater 
+        to hunt for easy food. </p>
+        <div class="list">
+        <h2>Common types of sharks.</h2>
+            <ul>
+                <a href="Sharks_pg2.html"> <li>Great White Shark</li></a>
+                <a href="Sharks_pg3.html"><li>Bull Shark</li></a>
+                <a href="Sharks_pg4.html"><li>Tiger Shark</li></a>
+            </ul>
+    </div>
+        <div class="list">
+            <h3>Important Shark Terms</h3>
+                <dl>
+                    <dt>Ampullae</dt>
+                    <dd>- sensory structures located on a shark’s body that detect electrical impulses over a short range</dd>
+                    <dt>Dermal Denticles</dt>
+                    <dd>- aka “skin teeth;” the protective (placoid) scales that cover a sharks body</dd>
+                    <dt>Tapetum lucidum</dt>
+                    <dd>- a tissue present in shark eyes, helps reflect light to the retina and increase their visibility in dark waters.</dd>
+                </dl>
+        </div>    
+        <h3 id="h3">Why sharks are our friends.</h3>
+        <!-- This image might not work if you attempt to run the code without having 
+            the picture saved somewhere. I was just trying out the other ways of adding pictures.-->
+        <img src="images\60375-bruce-shark-marlin-png-image-high-quality_400x400.png"
+         alt="Bruce the shark from Finding Nemo">
+        <p>As vast as the ocean is, it takes a <em>lot</em> of creatures to keep everything in balance. 
+        One such creature is the shark, with species as varied as they are unique. There are big sharks and 
+        small sharks, and sharks in the deep water and sharks in the shallows. There are sharks everywhere in 
+        between. And without these sharks the ecosystem would be out of whack, and in some place so would the 
+        economy! It is important that we try and protect these sharks from mass culling from fishermen’s nets, 
+        shark finning practices, and fear induced shark hunting practices. Statistically, humans kill far more 
+        sharks than shark have ever killed humans.</p>
+        <video width="420" height="340" controls muted loop>
+            <source src="video/Shark - 114099.mp4" type="video/mp4"> <!--local only. idk what other vids work on here-->
+            <!--source src="video/Shark - 114099.ogg" type="video/ogg"--> <!--added for format There is no actual audio to hear-->
+            Browser could not support video
+        </video>          
+            <table>
+                <caption>Table of the most endangered sharks</caption>  
+                <tr>
+                    <th>Species</th>
+                    <th>Threats</th>
+                    <th>Habitat</th>
+                </tr>
+                <tr>
+                    <td>Zebra Shark</td>
+                    <td>Overfishing and habitat destruction</td>
+                    <td>Coastal Indo-Pacific region</td>
+                </tr>
+                <tr>
+                    <td> Oceanic Whitetip Shark </td>
+                    <td> Overfishing </td>
+                    <td> Worldwide </td>
+                </tr>
+                <tr>
+                    <td>Pondicherry Shark</td>
+                    <td>Habitat destruction and overfishing </td>
+                    <td>Indo Pacific</td>
+                </tr>
+                <foot>
+                    <tr><td colspan="3" ><em>Table of the most endangered sharks, what the biggest threats to them are, 
+                        and where their habitats are.</em></td></tr>
+                </foot>
+              </table>
+            <div class = "list">
+              <h3>Top 3 threats to sharks overall</h3>
+                <ol>
+                    <li>Overfishing</li> 
+                    <li>Habitat Loss</li> 
+                    <li>Climate Change</li>  
+                </ol>
+            </div>
+            <!--Tag to go back to introduction-->
+            <a href="#top"><strong>BACK TO TOP</strong></a>
+            <p>
+                <br>
+                <br>
+                <br>
+            </p>
+    </body>
+</html>
