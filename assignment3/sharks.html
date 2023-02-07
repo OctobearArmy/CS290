@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sharks</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Information about sharks">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<style>
+    [class*="body"]{
+        background-color: beige;
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-radius: 1em;
+        padding-top: 2px;
+        text-align: center;
+        background-color: white;
+    }
+    .list{
+        background-color: lightblue;
+        color: navy;
+        border: 2px solid black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 2vw;
+        font-style: oblique;
+        font-variant: normal;
+        font-weight: bold;
+        text-align: left;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .sidenav {
+    height: 35vw; /*I think it looks weird to leave the sidebar hanging at 25/50%*/
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #0c005b;
+    overflow-x: hidden;
+    padding-top: 20px;
+    }
+
+    .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 3vw;
+    color: #818181;
+    display: block;
+    }
+
+    .sidenav a:hover {
+    color: #f1f1f1;
+    background-color: #1978b8;
+    }
+
+    .main {
+    margin-left: 170px; /* Same as the width of the sidenav */
+    font-size: 2vw; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+    }
+
+    @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 2vw;}
+    }
+    .scroll{
+        width: inherit;
+        height: 175px;
+        background-color: inherit;
+        overflow: auto;
+    }
+    p{
+        text-size-adjust: auto;
+        border: 2px solid black;
+        background-color: white;
+        padding: 10px;
+    }
+    p > em{
+        text-decoration: underline;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap');
+    h1{
+        font:small-caps bold 150px/150px'Raleway', sans-serif;
+        margin:0;
+        text-align:center;
+    }
+    .ocean{
+        background: linear-gradient(27deg,#012741, #1d4267, #1978b8, #8ab0d7);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 9vw;
+    }
+    img{
+        display:block;
+        margin: auto;
+        text-align: center;
+        height: inherit;
+    }
+    .Bruce img{
+        vertical-align:bottom;
+        float: left;
+        clear: right;
+    }
+    
+    .intro{
+        text-align: center;
+    }
+    #h3{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+    video{
+        display: block;
+        margin: auto;
+    }
+    .collapsible {
+        background-color: rgb(183, 223, 237);
+        color: navy;
+        cursor: pointer;
+        padding: 18px;
+        font-size: 2vw;
+        font-style: oblique;
+        font-variant: normal;
+        font-weight: bold;
+        text-align: left;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+    }
+
+.active, .collapsible:hover {
+  background-color: #145061;
+  color: white;
+  font-size: 2.5vw;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: lightblue;
+}
+</style>
+</head>
+<body class="body">
+
+<div class="sidenav">
+    <a href="#intro">Intro</a>
+    <a href="#common">Types</a>
+    <a href="#terms">Terms</a>
+    <a href="#save">Save Sharks</a>
+</div>
+
+<div class="main">
+  <h1 class = ocean >Sharks</h1>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Similan_Dive_Center_-_great_whale_shark.jpg"
+  alt="A whale shark"width="600"> 
+  <h2><a id="intro"></a>Intro</h2>
+  <p><strong> &emsp; Sharks are one of a kind in more than one way!</strong> Although they are fish, many sharks give birth to 
+    live young. This separates them from other fish who lay eggs to reproduce. Some species of sharks 
+    have even more unique reproductive practices, such as sand tiger sharks having two wombs to ensure 
+    that two pups survive the pregnancy. Female sharks across the board are considered stronger and tougher 
+    than the males, partially because of how aggressive most sharks are when they breed. In order to survive, 
+    the female sharks must endure bites and other aggressive behavior from the males. But don’t worry! 
+    Most sharks take a long nap afterwards, upwards of 12 hours.
+    <br> &emsp; Sharks come in all shapes and sizes, and eat all sorts of food. Some sharks are huge and eat tiny food, 
+    like whale sharks and basking sharks. Despite being the largest sharks, they eat only small prey like krill. 
+    Other sharks like great whites prefer to eat bigger prey like seals or other smaller sharks and fish. 
+    Still other sharks like the tiger shark are not picky with what they eat, earning them the nickname of  
+    the trash can of the sea. They have even adapted to easily devour sea turtles despite their protective shell. 
+    Bull sharks are another well known hungry shark, they oftentimes will work their way upstream into the freshwater 
+    to hunt for easy food. </p>
+  <div class="list">
+    <h2><a id="common"></a>Common types of sharks.</h2>
+    <div class="scroll" >
+        <ul>
+            <a href="Sharks_pg2.html"> <li>Great White Shark</li></a>
+            <a href="Sharks_pg3.html"><li>Bull Shark</li></a>
+            <a href="Sharks_pg4.html"><li>Tiger Shark</li></a>
+            <a href="Sharks_pg5.html"> <li>Whale Shark</li></a>
+            <a href="Sharks_pg6.html"><li>Basking Shark</li></a>
+            <a href="Sharks_pg7.html"><li>Tiger Shark</li></a>
+            <a href="Sharks_pg8.html"> <li>Epaulette shark</li></a>
+        </ul>
+    </div>
+</div>
+    <div class="list">
+        <h3><a id="terms"></a>Important Shark Terms</h3>
+            <dl>
+                <dt type="button" class="collapsible">Ampullae</dt>
+                <dd class="content">- sensory structures located on a shark’s body that detect electrical impulses over a short range</dd>
+                <dt type="button" class="collapsible">Dermal Denticles</dt>
+                <dd class="content">- aka “skin teeth;” the protective (placoid) scales that cover a sharks body</dd>
+                <dt type="button" class="collapsible">Tapetum lucidum</dt>
+                <dd class="content">- a tissue present in shark eyes, helps reflect light to the retina and increase their visibility in dark waters.</dd>
+            </dl>
+    </div>    
+    <h3 id="h3"><a id="save"></a>Why sharks are our friends.</h3>
+    <!-- This image might not work if you attempt to run the code without having 
+        the picture saved somewhere. I was just trying out the other ways of adding pictures.-->
+        
+    <div class="Bruce">
+        
+        <p><img 
+            src="images\60375-bruce-shark-marlin-png-image-high-quality_400x400.png" width=20%
+            alt="Bruce the shark from Finding Nemo">
+            As vast as the ocean is, it takes a <em>lot</em> of creatures to keep everything in balance. 
+        One such creature is the shark, with species as varied as they are unique. There are big sharks and 
+        small sharks, and sharks in the deep water and sharks in the shallows. There are sharks everywhere in 
+        between. And without these sharks the ecosystem would be out of whack, and in some place so would the 
+        economy! It is important that we try and protect these sharks from mass culling from fishermen’s nets, 
+        shark finning practices, and fear induced shark hunting practices. Statistically, humans kill far more 
+        sharks than shark have ever killed humans.</p>
+    </div>
+    <video width= 60% controls muted loop>
+        <source src="video/Shark - 114099.mp4" type="video/mp4"> <!--local only. idk what other vids work on here-->
+        <!--source src="video/Shark - 114099.ogg" type="video/ogg"--> <!--added for format There is no actual audio to hear-->
+        Browser could not support video
+    </video>          
+        <table>
+            <caption>Table of the most endangered sharks</caption>  
+            <tr>
+                <th>Species</th>
+                <th>Threats</th>
+                <th>Habitat</th>
+            </tr>
+            <tr>
+                <td>Zebra Shark</td>
+                <td>Overfishing and habitat destruction</td>
+                <td>Coastal Indo-Pacific region</td>
+            </tr>
+            <tr>
+                <td> Oceanic Whitetip Shark </td>
+                <td> Overfishing </td>
+                <td> Worldwide </td>
+            </tr>
+            <tr>
+                <td>Pondicherry Shark</td>
+                <td>Habitat destruction and overfishing </td>
+                <td>Indo Pacific</td>
+            </tr>
+            <foot>
+                <tr><td colspan="3" ><em>Table of the most endangered sharks, what the biggest threats to them are, 
+                    and where their habitats are.</em></td></tr>
+            </foot>
+        </table>
+        <div class = "list">
+        <h3>Top 3 threats to sharks overall</h3>
+            <ol>
+                <li>Overfishing</li> 
+                <li>Habitat Loss</li> 
+                <li>Climate Change</li>  
+            </ol>
+        </div>
+        <!--Tag to go back to introduction-->
+        <a href="#intro"><strong>BACK TO TOP</strong></a>
+            <br>
+            <br>
+            <br>
+</div>
+<script> /*Used format from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible*/
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+   
+</body>
+</html> 
