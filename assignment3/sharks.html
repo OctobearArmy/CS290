@@ -35,15 +35,16 @@
     }
 
     .sidenav {
-    height: 35vw; /*I think it looks weird to leave the sidebar hanging at 25/50%*/
+    height: auto; /* it looks weird to have a horizontal menu in my opinion*/
     width: 15%;
     position: fixed;
     z-index: 1;
-    top: 0;
+    top: 0; /*aka top left corner :)*/
     left: 0;
     background-color: #0c005b;
     overflow-x: hidden;
     padding-top: 20px;
+    padding-bottom: 20px;
     }
 
     .sidenav a {
@@ -52,16 +53,18 @@
     font-size: 3vw;
     color: #818181;
     display: block;
+    border-radius: 2em; /*cause ovals look like bubbles? IDK might change later*/
     }
 
     .sidenav a:hover {
-    color: #f1f1f1;
+    color: white;
     background-color: #1978b8;
+    font-size: 3.5vw;
     }
 
     .main {
     margin-left: 170px; /* Same as the width of the sidenav */
-    font-size: 2vw; /* Increased text to enable scrolling */
+    font-size: 2vw; 
     padding: 0px 10px;
     }
 
@@ -193,7 +196,7 @@
             <a href="Sharks_pg8.html"> <li>Epaulette shark</li></a>
         </ul>
     </div>
-</div>
+    </div>
     <div class="list">
         <h3><a id="terms"></a>Important Shark Terms</h3>
             <dl>
