@@ -1,0 +1,303 @@
+
+[class*="body"]{
+  background-color: beige;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+.endangered table, th, td {
+  border: 1px solid black;
+  border-radius: 1em;
+  padding-top: 2px;
+  text-align: center;
+  background-color: white;
+}
+.list{
+  background-color: lightblue;
+  color: navy;
+  border: 2px solid black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2vw;
+  font-style: oblique;
+  font-variant: normal;
+  font-weight: bold;
+  text-align: left;
+  margin: 20px;
+  padding: 20px;
+}
+.list li .span {
+  display: inline-block;
+}
+
+.sidenav {
+  height: auto; /* it looks weird to have a horizontal menu in my opinion*/
+  width: 15%;
+  position: fixed;
+  z-index: 1;
+  top: 0; /*aka top left corner :)*/
+  left: 0;
+  background-color: #0c005b;
+  overflow-x: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 3vw;
+  color: #818181;
+  display: block;
+  border-radius: 2em; /*cause ovals look like bubbles? IDK might change later*/
+}
+
+.sidenav a:hover {
+  color: white;
+  background-color: #1978b8;
+  font-size: 3.5vw;
+}
+
+.main {
+  margin-left: 170px; /* Same as the width of the sidenav */
+  font-size: 2vw; 
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 2vw;}
+}
+.scroll{
+  width: inherit;
+  height: 175px;
+  background-color: inherit;
+  overflow: auto;
+}
+.para{
+  text-size-adjust: auto;
+  border: 2px solid black;
+  background-color: white;
+  padding: 10px;
+}
+p > em{
+  text-decoration: underline;
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap');
+h1{
+  font:small-caps bold 150px/150px'Raleway', sans-serif;
+  margin:0;
+  text-align:center;
+}
+.ocean{
+  background: linear-gradient(27deg,#012741, #1d4267, #1978b8, #8ab0d7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 9vw;
+}
+img{
+  display:block;
+  margin: auto;
+  text-align: center;
+  height: inherit;
+}
+.Bruce img{
+  vertical-align:bottom;
+  float: left;
+  clear: right;
+}
+
+.intro{
+  text-align: center;
+}
+#h3{
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+video{
+  display: block;
+  margin: auto;
+}
+
+.collapsible {
+  background-color: rgb(183, 223, 237);
+  color: navy;
+  cursor: pointer;
+  padding: 18px;
+  font: inherit;
+  text-align: left;
+  height: 100%;
+  width: inherit;
+  text-align: left;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+}
+.active, .collapsible:hover {
+  background-color: #145061;
+  color: white;
+  font-size: 2.5vw;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: lightblue;
+  transition: all 0.5s ease-out;
+}
+.container {
+  background-color: lightblue;
+  color: navy;
+  border: 2px solid black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2vw;
+  font-style: oblique;
+  font-variant: normal;
+  font-weight: bold;
+  text-align: left;
+  margin: 20px;
+  padding: 20px;
+}
+
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+.accordion .accordion-item button[aria-expanded=true] {
+  border-bottom: 1px solid #03b5d2;
+}
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  background-color: lightblue;
+  color: navy;
+  /* border: 2px solid black; */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2vw;
+  font-style: oblique;
+  font-variant: normal;
+  font-weight: bold;
+  text-align: left;
+  /* margin: 20px;
+  padding: 20px; */
+}
+.accordion button:hover, .accordion button:focus {
+  cursor: pointer;
+  color: #03b5d2;
+}
+.accordion button:hover::after, .accordion button:focus::after {
+  cursor: pointer;
+  color: #03b5d2;
+  border: 1px solid #03b5d2;
+}
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+.accordion button #icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  /* border: 1px solid; */
+  border-radius: 22px;
+}
+.accordion button #icon::before {
+  display: block;
+  position: absolute;
+  font: var(--fa-font-solid);
+  content: " ";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button #icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.accordion button[aria-expanded=true] {
+  background-color: rgb(183, 223, 237);
+  color: navy;
+}
+.accordion button[aria-expanded=true] #icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded=true] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  background-color: rgb(183, 223, 237);
+  color: navy;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+  /* background-color: lightblue;
+  color: navy;
+  border: 2px solid black; */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2vw;
+  font-style: oblique;
+  font-variant: normal;
+  font-weight: bold;
+  text-align: left;
+  /* margin: 20px;
+  padding: 20px; */
+}
+.accordion .accordion-content p {
+  /* font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0; */
+  background-color: rgb(183, 223, 237);
+  color: navy;
+  /* border: 2px solid black; */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2vw;
+  font-style: oblique;
+  font-variant: normal;
+  font-weight: bold;
+  text-align: left;
+  margin: 20px;
+  padding: 20px;
+}
+
+button {
+  margin: auto;
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  background-color: #607d8b;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #516a75;
+}
+p input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  background-color: #607d8b;
+  color: #fff;
+}

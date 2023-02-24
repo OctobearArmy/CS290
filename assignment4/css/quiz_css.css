@@ -1,0 +1,153 @@
+.container {
+  max-width: 85%;
+  margin: auto;
+}
+.container li div {
+ 
+ min-width: 8vw;
+ width: auto;
+ /* margin: auto; */
+ /* float: left;
+ clear: right; */
+}
+.container ul li div {
+  cursor: grab;
+}
+.headbox h1{
+  background-color: #37474f;
+  color: white;
+  padding:2vw ;
+  font-size: 4vw;
+  margin: 0;
+}
+/* .headbox p {
+
+} */
+.qbody {
+ background-color: #eceff1;
+ font-family: sans-serif;
+ color: #37474f;
+ margin: 0%;
+}
+
+.qbody h1, h3, p {
+ text-align: center;
+}
+
+main {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ grid-gap: 2vw;
+ border: 2px black;
+}
+.dropBox-list {
+ background-color: #cfd8dc;
+ padding: 10px;
+ margin: 2vw;
+}
+
+.draggable-list {
+ /* padding: 5px; */
+ padding: 10px;
+ margin: 2vw;
+ background-color: lightblue;
+ border: 1px solid #b0bec5;
+}
+.box {
+ display: inline-block;
+ width: 0;
+ background: lightblue;
+ margin: 0 3px;
+ /* text-align:left; */
+ border: 1px white;
+}
+
+.container li {
+ padding: 10px, 0px, 10px, 0px;
+ margin: 2vw;
+ background-color: #cfd8dc;
+ color: #263238;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2vw;
+  font-style: oblique;
+  font-variant: normal;
+  font-weight: bold;
+}
+.draggable-list li {
+ list-style: none;
+ text-align: center;
+ background-color: lightblue;
+}
+.dropBox-list li {
+  text-align: left;
+  /* margin: 2vw; */
+  list-style-position: inside padding;
+ }
+
+.over {
+ background-color: #cfd8dc;
+ border: 1px white;
+}
+
+
+table {
+ width:50%;
+ margin: auto;
+ margin-bottom: 20px;
+ margin-left: auto;
+ margin-right: auto;
+ border: 1px solid #b0bec5;
+}
+
+
+.endmessage th, td {
+ padding: 10px 10px;
+}
+
+.endmessage td {
+ border: 1px solid #90a4ae;
+}
+.end {
+  display: grid;
+  justify-items: center;
+}
+tr:nth-child(even) {
+ background-color: #cfd8dc;
+}
+
+button {
+ margin: auto;
+ cursor: pointer;
+ display: block;
+ padding: 10px;
+ font-size: 16px;
+ border-radius: 4px;
+ border: none;
+ background-color: #607d8b;
+ color: #fff;
+}
+
+button:hover {
+ background-color: #516a75;
+}
+
+#endMessage {
+ display: none;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.defs {
+ float: left;
+ clear: right;
+}
+.scorebox {
+ width: 50%;
+ background: lightblue;
+ margin: 0 3px;
+ text-align:center;
+ font: 4vw  sans-serif black;
+ border: 1px white;
+margin-left: auto;
+margin-right: auto;
+}

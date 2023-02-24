@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head> <!--tutorial https://www.w3schools.com/jquery/ -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>// I could use a seperate page for style and script but this project already has so many pages
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
+$(document).ready(function(){
+  $("button").click(function(){
+    $("div").animate({
+      left: '50%',
+      opacity: '0.5',
+      height: '350px',
+      width: '350px'
+    });
+  });
+});
+</script>
+</head>
+<body>
+  <button>Start Animation</button>
+  <div style="background:#98bf21;height:150px;width:150px;position:absolute;"></div>
+  <p>If you click on me,<br>I will disappear.</p>
+  <p>Click me away!</p>
+  <p>Click me too!</p>
+<!-- In conclusion jquery makes everything look easy! -->
+</body>
+</html>
