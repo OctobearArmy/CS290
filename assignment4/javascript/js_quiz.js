@@ -18,6 +18,10 @@ let boxd1;
 let boxd2;
 let boxd3;
 
+let boxValId1;
+let boxValId2;
+let boxValId3;
+
 let boxes = [boxd1,boxd2,boxd3]
 
 // counter for correct phrases
@@ -32,6 +36,25 @@ addEventListeners();
 function dragStart(ev) {
   console.log("Entering 'dragStart'");
   selectedId = this.id;
+  // let id1;
+  // let id2;
+  // let id3;
+  if ((boxd1 && boxd2 && boxd3) || (selectedId !== (boxValId1 || boxValId2 || boxValId3))) {
+    // id1
+    // console.log('id1', id1)
+    // console.log('id2', id2)
+    // console.log('id1', id1)
+
+
+  }
+  // if (boxd2) {
+  //   id2 = boxValId2; 
+  // }
+  // if (boxd3) {
+  //   id3 =bo
+  // }
+
+
   dragSourceElement = this;
   ev.dataTransfer.effectAllowed = 'move';
   ev.dataTransfer.setData('text/html',this.innerHTML)
@@ -39,16 +62,16 @@ function dragStart(ev) {
 }
 
 function dragEnter(ev) {
-  console.log("Entering 'dragEnter'");
+  // console.log("Entering 'dragEnter'");
   ev.preventDefault();
   this.classList.add('over');
-  console.log("Leaving 'dragEnter'");
+  // console.log("Leaving 'dragEnter'");
 }
 
 function dragLeave() {
-  console.log("Entering 'dragLeave'");
+  // console.log("Entering 'dragLeave'");
   this.classList.remove('over');
-  console.log("Leaving 'dragLeave'");
+  // console.log("Leaving 'dragLeave'");
 }
 
 function dragOver(ev) {
@@ -59,9 +82,9 @@ function dragOver(ev) {
 }
 
 function allowDrop(ev) {
-  console.log("Entering 'allowDrop'");
+  // console.log("Entering 'allowDrop'");
   ev.preventDefault();
-  console.log("Leaving 'allowDrop'");
+  // console.log("Leaving 'allowDrop'");
 }
 
 function dragDrop(ev) {
@@ -74,18 +97,77 @@ function dragDrop(ev) {
     console.log('target: ', target)
     if(target === 'd1') {
       boxd1 = dragSourceElement;
-      console.log('boxd1: ', boxd1)
+      boxValId1 =selectedId;
+      if (selectedId === boxValId1)  {
+        let del = document.getElementById('d1') 
+        del.innerHTML ='&nbsp;'
+        del.classList.remove('over')
+
+      }
+      if (selectedId === boxValId2)  {
+        let del = document.getElementById('d2') 
+        del.innerHTML ='&nbsp;' 
+        del.classList.remove('over')
+     
+      }
+      if (selectedId === boxValId3)  {
+        let del = document.getElementById('d3') 
+        del.innerHTML ='&nbsp;'
+        del.classList.remove('over')
+      }     
+      console.log(' boxd1: ', boxd1)
+      console.log(' boxd2: ', boxd2)
+      console.log(' boxd3: ', boxd3)
 
     }
     if (target === 'd2') {
       boxd2 = dragSourceElement;
-      console.log('boxd2: ', boxd2)
+      boxValId2 =selectedId;
+      if (selectedId === boxValId1)  {
+        let del = document.getElementById('d1') 
+        del.innerHTML ='&nbsp;'
+        del.classList.remove('over')
+
+      }
+      if (selectedId === boxValId2)  {
+        let del = document.getElementById('d2') 
+        del.innerHTML ='&nbsp;' 
+        del.classList.remove('over')
+     
+      }
+      if (selectedId === boxValId3)  {
+        let del = document.getElementById('d3') 
+        del.innerHTML ='&nbsp;'
+        del.classList.remove('over')
+      }
+      console.log(' boxd1: ', boxd1)
+      console.log(' boxd2: ', boxd2)
+      console.log(' boxd3: ', boxd3)
 
     }
     if (target === 'd3') {
       boxd3 = dragSourceElement;
-      console.log('boxd3: ', boxd3)
+      boxValId3 =selectedId;
+      if (selectedId === boxValId1)  {
+        let del = document.getElementById('d1') 
+        del.innerHTML ='&nbsp;'
+        del.classList.remove('over')
 
+      }
+      if (selectedId === boxValId2)  {
+        let del = document.getElementById('d2') 
+        del.innerHTML ='&nbsp;' 
+        del.classList.remove('over')
+     
+      }
+      if (selectedId === boxValId3)  {
+        let del = document.getElementById('d3') 
+        del.innerHTML ='&nbsp;'
+        del.classList.remove('over')
+      }
+      console.log(' boxd1: ', boxd1)
+      console.log(' boxd2: ', boxd2)
+      console.log(' boxd3: ', boxd3)
     }
     // let old = $(this).attr('value');
     // let value = $(dragSourceElement).attr('value');
@@ -109,6 +191,8 @@ function dragDrop(ev) {
   // const data = ev.dataTransfer.getData("text");
   // ev.target.appendChild(document.getElementById(data));
   // classList.remove('over');
+  this.classList.add('over')
+
   console.log("Leaving 'dragDrop'");
 }
 
@@ -175,6 +259,7 @@ function checkForMatch( drop) {
   console.log("Entering checkForMatch");
   console.log("Matchingcounter", matchingCounter);
 
+  console.log("boxws", boxes);
 
   let id1;
   let id2;
