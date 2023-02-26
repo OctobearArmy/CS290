@@ -22,7 +22,6 @@ let boxValId1;
 let boxValId2;
 let boxValId3;
 
-let boxes = [boxd1,boxd2,boxd3]
 
 // counter for correct phrases
 let matchingCounter = 0;
