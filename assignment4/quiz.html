@@ -10,31 +10,31 @@
 <body class="qbody">
 <div class="headbox">
   <h1>Quiz</h1>
-  <p>Drag the matching word over to the matching definition</p>
 </div>
-  <main class="container">
-    <div>
-      <ul class="draggable-list">
-        <li><div id="a1" draggable="true" >Ampullae</div></li>
-        <li><div id="a2" draggable="true" >Dermal Denticles</div></li>
-        <li><div id="a3" draggable="true" >Tapetum Lucidum</div></li>
-      </ul>
-      <button onClick="reset();">Reset</button>
-    </div>
-    <div class="defs">
-      <ol class="dropBox-list">
-        <li><div class="box" id="d2" >
-          &nbsp;</div> - scales that cover a sharks body</li>
+  <div class="content">
+    <p>Drag the matching word over to the matching definition.<br>
+    If you need to change an answer, drop the appropriate word on the one you want to change.</p>
+    <main class="container">
+      <div>
+        <ul class="draggable-list" id="terms">
+          <li><div id="a1" draggable="true" >Ampullae</div></li>
+          <li><div id="a2" draggable="true" >Dermal Denticles</div></li>
+          <li><div id="a3" draggable="true" >Tapetum Lucidum</div></li>
+        </ul>
+        <button onClick="reset();">Reset</button>
+      </div>
+      <div class="defs" id="definitions">
+        <ol class="dropBox-list">
+          <li><div class="box" id="d2" >&nbsp;</div> - scales that cover a sharks body</li>
 
-        <li><div class="box" id="d1" >
-          &nbsp;</div> - sensory structures located on a shark’s body </li>
+          <li><div class="box" id="d1" >&nbsp;</div> - sensory structures located on a shark’s body </li>
 
-        <li><div class="box" id="d3" >
-          &nbsp;</div> - tissue in the eye that increases a shark's visibility in dark waters</li>
-      </ol>
-      <button onclick="submit();">Submit</button>
-    </div>
-  </main>
+          <li><div class="box" id="d3" >&nbsp;</div> - tissue in the eye that increases a shark's visibility in dark waters</li>
+        </ol>
+        <button onclick="submit();">Submit</button>
+      </div>
+    </main>
+  </div>
 
   <div id="endMessage" class="end">
     <div class="scorebox"><h1>SCORE</h1></div>
