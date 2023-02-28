@@ -134,6 +134,8 @@ function dragDrop(ev) {
     // } else {
     this.innerHTML = ev.dataTransfer.getData("text/html");
     this.style.textDecoration = "underline";
+    this.classList.add("over")
+
     //  $(this).attr("value", value);
     // }
     console.log("this again:", this);
@@ -145,7 +147,6 @@ function dragDrop(ev) {
   // const data = ev.dataTransfer.getData("text");
   // ev.target.appendChild(document.getElementById(data));
   // classList.remove("over");
-//   this.classList.add("over")
 
 //   console.log("Leaving "dragDrop"");
 // }
