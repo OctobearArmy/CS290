@@ -1,12 +1,7 @@
-const express = require('express');
-const app = express();
-const path = require('path');
+const express    = require('express'); //does this count
+const app        = express();
+const path       = require('path');
 const bodyParser = require('body-parser');
-
-app.use(express.static(path.join(__dirname, 'public')));
-
-// I kept messing this portion up at first thank you tutorialspoint :)
-app.use(bodyParser.json());
 
 // the flashcard definitions
 const definitions = {
@@ -15,9 +10,18 @@ const definitions = {
   "Tapetum Lucidum": " A tissue present in shark eyes, helps reflect light to the retina and increase their visibility in dark waters."
 };
 
+
+app.use(express.static(path.join(__dirname, 'main')));
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'main', 'sharks_main.html'));
+});
+
+// I kept messing this portion up at first thank you tutorialspoint :)
+app.use(bodyParser.json());
+
 app.post('/flashcard', (req, res) => {
   console.log('Received /flashcard');
-
   const button = req.body.button;
   const definition = definitions[button];
   res.json({ definition });
