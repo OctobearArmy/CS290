@@ -359,6 +359,7 @@ p input {
   box-shadow: 2px 2px 5px gray;
   margin: 10px;
   padding: 10px;
+  background-color: rgb(183, 223, 237);
 }
 
 .flashcard button {
@@ -376,4 +377,8 @@ p input {
   text-align: left;
   margin: 20px;
   padding: 20px;
+}
+.flashcard-definition p {
+  margin: 0%;
+  padding: 0%;
 }

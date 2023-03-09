@@ -1,4 +1,4 @@
-const express    = require('express'); //does this count
+const express    = require('express'); //does this count for part 3 of the assignment?
 const app        = express();
 const path       = require('path');
 const bodyParser = require('body-parser');
