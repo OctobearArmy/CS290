@@ -24,3 +24,4 @@ possibly another video/picture
 At the end I will ask the user to take a quiz on what they learned and it will take them to a new page that holds a drag and drop style quiz.
 at the end of the quiz I will ask them to input their names and will attempt to add their name and score to a list. Either that or I'll have a textbox question added to the bottom
 
+SIDE NOTE: is part tree of this assignment met by my using node with express in my server code?
