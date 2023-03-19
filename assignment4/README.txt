@@ -21,5 +21,6 @@ Below that there would be another section with a paragraph about how sharks are 
 then after that there would be a ranked list of the greatest dangers to sharks. 
 I would also include a table that has the most critically endangered sharks their cause for endangerment and possibly their habitats as well.
 possibly another video/picture
+I will probobly add some server side flashcards or a quick reveiw to prepare for the quiz.
 At the end I will ask the user to take a quiz on what they learned and it will take them to a new page that holds a drag and drop style quiz.
 
