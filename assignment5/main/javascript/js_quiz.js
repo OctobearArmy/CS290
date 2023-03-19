@@ -214,9 +214,9 @@ function addEventListeners() {
     item.addEventListener("dragleave", dragLeave);
   })
 }
-document.getElementById('button1').addEventListener('click', function() { displayFlashcard('Button 1'); });
-document.getElementById('button2').addEventListener('click', function() { displayFlashcard('Button 2'); });
-document.getElementById('button3').addEventListener('click', function() { displayFlashcard('Button 3'); });
+// document.getElementById('button1').addEventListener('click', function() { displayFlashcard('Button 1'); });
+// document.getElementById('button2').addEventListener('click', function() { displayFlashcard('Button 2'); });
+// document.getElementById('button3').addEventListener('click', function() { displayFlashcard('Button 3'); });
 
 //------------------------------------------------------------------------------------------
 // from here down is just stuff I was messing aroun with. Submit does nothing
