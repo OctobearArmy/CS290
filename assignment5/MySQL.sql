@@ -1,5 +1,4 @@
-var mysql = require('mysql'); //no there isn't a html file for this I was collowing a tutorial from https://www.w3schools.com/nodejs/nodejs_mysql
-//maybe later I will add to it but my main priority is the main app
+var mysql = require('mysql'); 
 
 var con = mysql.createConnection({
   host: "localhost",
