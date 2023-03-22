@@ -28,8 +28,24 @@ the drag drop quiz has a next question button that takes you to a new page with 
 
 Now, go re-review each of the sites you picked at the start of the term, reviewing them now with your new knowledge of web development might make you notice more of some kinds of problems and make some of the problems less of a problem.  Be sure to include any thoughts you have on why your thoughts or opinions might have changed.
 assignment 1:
-A huge issue was the lach of centering. It made it hard to look at the paragraphs especially.
+A huge issue was the lack of centering. It made it hard to look at the paragraphs especially.
 assignment 2:
+still no centering and I wish I could add divs to divide up the page better because that is a problem I can't ignore
+assignment 3:
+no real problems but the lack of interactable things made it more boring. I liked being able to make thing shift with a click. making user interaction more fun. divs would be helpful.
+assignment 4:
+Knowing what I know now I would have done a lot more of my javascript in jqery. I enjoyed it much more once I started using it.
+assignment 5:
+knowing what I know now about serverside (a lot more) I would have made a way to add new flashcards or something. that said. the only thing i had a problem with for my project is that I didn't make each flashcard have their own div to put the defenition in.
+
 Lastly, go review each of your own projects from the point of view of the aspects that you liked and disliked at the start of the term.
 assignment 1:
-obviously not having css made everything look really bland. I disliked not being able to center everything
+obviously not having css made everything look really bland. I disliked not being able to center everything and not having color 
+assignment 2:
+I'm glad for the addition of css. I hate boring looking websites. Massive aesthetic improvement!
+assignment 3:
+I liked being able to make thing shift with a click. making user interaction more fun and interesting. 
+assignment 4:
+I loved the cool things that javascript added. Javascript is important. Be it site searches or literally any other webapp that isn't just a simple informational website
+assignment 5:
+Serverside is super useful for saving suggestions in input boxes, secure sign ins etc. I didn't realize how useful it could be.
