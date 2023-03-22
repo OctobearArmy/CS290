@@ -313,7 +313,6 @@ $(document).ready(function() {
     output.innerHTML += scoreString;
   }
 
-  // Looks up a word in the dictionary API and returns suggested words if the word is misspelled
  // Looks up a word in the dictionary API and returns suggested words if the word is misspelled
 function checkSpelling(word, suggestionsElement) {
   if (word.trim() === '') {
