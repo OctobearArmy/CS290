@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matching Game</title>  
+  <link rel="stylesheet" href="css/quiz_css.css">
+</head>
+<body class="qbody">
+<div class="headbox">
+  <h1>Quiz</h1>
+</div>
+  <div class="content">
+    <p>1. Drag the matching word over to the matching definition.<br>
+    </p>
+    <main class="container">
+      <div>
+        <ul class="draggable-list" id="terms">
+          <li><div id="a1" draggable="true" >Ampullae</div></li>
+          <li><div id="a2" draggable="true" >Dermal Denticles</div></li>
+          <li><div id="a3" draggable="true" >Tapetum Lucidum</div></li>
+        </ul>
+        <button onClick="reset();">Reset</button>
+      </div>
+      <div class="defs" id="definitions">
+        <ol class="dropBox-list">
+          <li><div class="box" id="d2" >&nbsp;</div> - scales that cover a sharks body</li>
+
+          <li><div class="box" id="d1" >&nbsp;</div> - sensory structures located on a shark’s body </li>
+
+          <li><div class="box" id="d3" >&nbsp;</div> - tissue in the eye that increases a shark's visibility in dark waters</li>
+        </ol>
+        <button onclick="submit();">Submit</button>
+      </div>
+    </main>
+
+  </div>
+  <div>
+    <!-- <p>2. Type the answer in the text box.<br>
+    </p>
+    <form action="/" method="post">
+      <label for="answer">Answer:</label>
+      <input type="text" id="answer" name="answer">
+      <button type="submit">Submit</button>
+    </form>
+  </div> -->
+  <div id="endMessage" class="end">
+    <div class="scorebox"><h1>SCORE</h1></div>
+    <h3>Answers</h3>
+    <table>
+      <tr>
+        <th>Terms</th>
+        <th>Definition</th>
+      </tr>
+      <tr>
+        <td>Ampullae</td>
+        <td>sensory structures located on a shark’s body</td>
+      </tr>
+      <tr>
+        <td>Dermal Denticles</td>
+        <td>scales that cover a sharks body</td>
+      </tr>
+      <tr>
+        <td>Tapetum Lucidum</td>
+        <td>tissue in the eye that increases a shark's visibility in dark waters</td>
+      </tr>
+    </table>
+
+    <button onclick="window.location.reload();">Try Again</button>
+    <button onclick="getConfirmation()">Next Question</button>
+    <p id="name"></p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="javascript/js_quiz.js"></script>
+  
+
+  
+</body>
+</html>
